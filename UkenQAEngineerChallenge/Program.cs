@@ -24,13 +24,13 @@ namespace UkenQAEngineerChallenge
         {
             string path = Directory.GetCurrentDirectory();
             string[] files = Directory.GetFiles(path+@"\src", "*.txt");
+            FileNumber fileNum;
 
             foreach (var file in files)
             {
                 using (StreamReader sr = File.OpenText(file))
                 {
                     fileNumbers = new List<FileNumber>();
-                    FileNumber fileNum;
                     string s = "";
                     while ((s = sr.ReadLine()) != null)
                     {
@@ -53,15 +53,37 @@ namespace UkenQAEngineerChallenge
                         {
                             Console.WriteLine("Unable to parse " + s);
                         }
-                        
-                        //Console.WriteLine(s);
                     }
                 }
-                //
+                fileNum = FindLeastSeenNumber();
+                Console.WriteLine("File: " + Path.GetFileName(file) + ", Number: " + fileNum.GetNumber() + ", Repeated: " + fileNum.GetOccuarnces() + " times");
             }
 
-            Console.WriteLine("Press any button to exit");
+            Console.WriteLine("Press enter to exit");
             Console.ReadLine();//keep the console open
+        }
+
+        /*
+         * Finds and returns the number in the file that shows up the least
+         */
+        private FileNumber FindLeastSeenNumber()
+        {
+            
+            fileNumbers.Sort(delegate (FileNumber x, FileNumber y)
+            {
+                if (x.GetOccuarnces() > y.GetOccuarnces())
+                    return 1;
+                else if (x.GetOccuarnces() < y.GetOccuarnces())
+                    return -1;
+                else
+                {
+                    if (x.GetNumber() > y.GetNumber())
+                        return 1;
+                    else
+                        return -1;
+                }
+            });
+            return fileNumbers[0];
         }
     }
 
@@ -84,6 +106,16 @@ namespace UkenQAEngineerChallenge
         public void IncreaseOccurances()
         {
             numOfOccurances++;
+        }
+
+        public int GetNumber()
+        {
+            return number;
+        }
+
+        public int GetOccuarnces()
+        {
+            return numOfOccurances;
         }
 
         public override String ToString()
