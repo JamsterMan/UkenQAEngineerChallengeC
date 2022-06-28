@@ -68,7 +68,7 @@ namespace UkenQAEngineerChallenge
          */
         private FileNumber FindLeastSeenNumber()
         {
-            
+            //sorts by occurances then by number if needed
             fileNumbers.Sort(delegate (FileNumber x, FileNumber y)
             {
                 if (x.GetOccuarnces() > y.GetOccuarnces())
