@@ -4,8 +4,7 @@
 How to setup/run the program:
 1. Download the files from github
 2. unzip the files
-3. navigate to UkenQAEngineerChallengeC-/UkenQAEngineerChallenge/bin/Debug/
-4. run UkenQAEngineerChallenge.exe
+3. navigate to UkenQAEngineerChallengeC-/UkenQAEngineerChallenge/bin/Debug/ and run UkenQAEngineerChallenge.exe
 
 or
 
