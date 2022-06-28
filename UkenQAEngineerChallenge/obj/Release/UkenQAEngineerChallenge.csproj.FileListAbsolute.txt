@@ -1,0 +1,6 @@
+E:\Users\benbr\Desktop\game prog\UkenQAEngineerChallengeC-\UkenQAEngineerChallenge\bin\Release\UkenQAEngineerChallenge.exe.config
+E:\Users\benbr\Desktop\game prog\UkenQAEngineerChallengeC-\UkenQAEngineerChallenge\bin\Release\UkenQAEngineerChallenge.exe
+E:\Users\benbr\Desktop\game prog\UkenQAEngineerChallengeC-\UkenQAEngineerChallenge\bin\Release\UkenQAEngineerChallenge.pdb
+E:\Users\benbr\Desktop\game prog\UkenQAEngineerChallengeC-\UkenQAEngineerChallenge\obj\Release\UkenQAEngineerChallenge.csproj.CoreCompileInputs.cache
+E:\Users\benbr\Desktop\game prog\UkenQAEngineerChallengeC-\UkenQAEngineerChallenge\obj\Release\UkenQAEngineerChallenge.exe
+E:\Users\benbr\Desktop\game prog\UkenQAEngineerChallengeC-\UkenQAEngineerChallenge\obj\Release\UkenQAEngineerChallenge.pdb
